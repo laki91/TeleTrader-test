@@ -53,7 +53,13 @@ export default function Details(props) {
                                 <th>Last Price</th>
                                 <th>High</th>
                                 <th>Low</th>
-                                <th>Action</th>
+                                <th>
+                                {loggedIn ?
+                                        <>
+                                        Action
+                                        </>
+                                        : null}
+                                </th>
                             </tr>
                         </thead>
                         <tbody className='text-center'>
